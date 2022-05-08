@@ -49,12 +49,14 @@ export default function Navbar() {
                 <BsFillCloudSunFill size={25} />
               )}
             </button>
-            <button
-              className="rounded-full shadow-xl text-white bg-gray-800 dark:text-black dark:bg-gray-200 px-2 py-2 hover:scale-95"
-              onClick={handleDropdown}
-            >
-              <AiOutlineUser size={25} />
-            </button>
+            <Link href={"/dashboard"}>
+              <button
+                className="rounded-full shadow-xl text-white bg-gray-800 dark:text-black dark:bg-gray-200 px-2 py-2 hover:scale-95"
+                onClick={handleDropdown}
+              >
+                <AiOutlineUser size={25} />
+              </button>
+            </Link>
           </div>
         </nav>
       </div>
