@@ -32,7 +32,7 @@ export default function Container({ title }: Props) {
           },
           {
             property: "og:url",
-            content: "https://shortl.netlify.app/",
+            content: "https://shortll.netlify.app/",
           },
           {
             property: "og:title",
@@ -53,7 +53,7 @@ export default function Container({ title }: Props) {
           },
           {
             property: "twitter:url",
-            content: "https://shortl.netlify.app/",
+            content: "https://shortll.netlify.app/",
           },
           {
             property: "twitter:title",
