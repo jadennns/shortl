@@ -5,6 +5,7 @@ import { withSessionSsr } from "../lib/session";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { AiFillEdit } from "react-icons/ai";
 import Link from "next/link";
+import { FiPlus } from "react-icons/fi";
 
 interface Props {
   user: ShortlUser;
@@ -27,6 +28,11 @@ export default function Dashboard({ user }: Props) {
       <Container title="Dashboard" />
       <div className="flex flex-col space-y-10 items-center justify-center mt-20">
         <h1 className="text-4xl font-semibold">{user.username} Redirects</h1>
+        <Link href={"/account/create"}>
+          <div className="rounded-full bg-gray-600 hover:bg-gray-700 cursor-pointer  text-white">
+            <FiPlus size={32} />
+          </div>
+        </Link>
         <div className="h-fit flex flex-col space-y-2 py-3 px-3 w-[50rem] bg-gray-100 rounded-md">
           {data.map((redirect, index) => (
             <div
